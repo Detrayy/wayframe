@@ -1,0 +1,21 @@
+[package]
+name = "wayframe"
+version = "0.1.0"
+edition = "2024"
+description = "A Wayland micro-compositor to enforce SSDs via GTK4"
+authors =["MegalithOfficial"]
+
+[dependencies]
+smithay = "0.7.0"
+wayland-server = "0.31.1"
+wayland-protocols = { version = "0.31.0", features = ["server"] }
+
+gtk4 = "0.8.1"
+gdk4 = { version = "0.8.2", features = ["v4_14"] }
+libadwaita = "0.6.0"
+
+calloop = "0.12.0"
+crossbeam-channel = "0.5.11"
+tracing = "0.1.40"
+tracing-subscriber = "0.3.18"
+libc = "0.2"
